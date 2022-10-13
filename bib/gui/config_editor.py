@@ -13,3 +13,12 @@ def create_config():
         }
         with open('config.ini', 'w') as configfile:
             config.write(configfile)
+
+def engine_config():
+    if(os.path.exists('config.ini') == False):
+        open('config.ini', 'a').close()
+        config = configparser.ConfigParser()
+        config['CONFIG-ENGINE'] ={
+            'ENGINE-HEIGHT': 
+            ''
+        }

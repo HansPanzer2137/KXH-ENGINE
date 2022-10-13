@@ -5,6 +5,12 @@ import os
 import sys
 import configparser
 
+# light shade of the button
+color_light = (170,170,170)
+  
+# dark shade of the button
+color_dark = (100,100,100)
+
 class config_gui():
         read_width = 0
         read_height = 0
@@ -25,8 +31,13 @@ def engine_config_get():
 
 def engine_run():
     global config_gui, app_debug
+    os.environ['SDL_VIDEO_CENTERED'] = '1'
+    screen = pygame.display.set_mode((config_gui.read_width, config_gui.read_height), pygame.NOFRAME)
+    color = (255,255,255)
+    pygame.display.set_caption('Save')
 
-    screen = pygame.display.set_mode((config_gui.read_width, config_gui.read_height))
+    
+
     pygame.display.flip()
 
     app_debug.config_engine_run = True
@@ -34,4 +45,8 @@ def engine_run():
         for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                         app_debug.config_engine_run=False
+        pygame.display.update()
+       
+
+                  
     
