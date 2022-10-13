@@ -4,6 +4,17 @@ import pygame
 import os
 import sys
 import configparser
+from PIL import Image
+FORMAT = "RGBA"
+
+
+def pil_to_game(img):
+    data = img.tobytes("raw", FORMAT)
+    return pygame.image.fromstring(data, img.size, FORMAT)
+
+def get_gif_frame(img, frame):
+    img.seek(frame)
+    return  img.convert(FORMAT)
 
 # light shade of the button
 color_light = (170,170,170)
@@ -40,12 +51,23 @@ def engine_run():
 
     pygame.display.flip()
 
+    gif_img = Image.open('res/img/loading.gif')
+    if not getattr(gif_img, "is_animated", False):
+        print(f"Error, missing loading screen image")
+        return
+    current_frame = 0
+    clock = pygame.time.Clock()
+
     app_debug.config_engine_run = True
     while app_debug.config_engine_run:
+        frame = pil_to_game(get_gif_frame(gif_img, current_frame))
+        screen.blit(frame, (0, 0))
         for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                         app_debug.config_engine_run=False
         pygame.display.update()
+        current_frame = (current_frame + 1) % gif_img.n_frames
+        clock.tick(10)
        
 
                   

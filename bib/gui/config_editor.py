@@ -7,8 +7,8 @@ def create_config():
         open('config.ini', 'a').close()
         config = configparser.ConfigParser()
         config['CONFIG-EDITOR'] = {
-            'GUI-height': '600',
-            'GUI-width': '800',
+            'GUI-height': '287',
+            'GUI-width': '917',
             'GUI-drone': 'class-K'
         }
         with open('config.ini', 'w') as configfile:
