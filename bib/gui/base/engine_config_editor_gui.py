@@ -68,6 +68,11 @@ def engine_run():
         pygame.display.update()
         current_frame = (current_frame + 1) % gif_img.n_frames
         clock.tick(10)
+        if current_frame == 200:
+            app_debug.config_engine_run=False
+    
+
+
        
 
                   
