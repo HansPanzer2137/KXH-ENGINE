@@ -2,4 +2,6 @@ import os
 import sys
 
 
-from bib import main_pip
+import bib.main_pip
+
+bib.main_pip.init_engine()
