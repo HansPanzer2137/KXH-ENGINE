@@ -1,9 +1,12 @@
-import py_compile
-import sys
-from bib.gui.base.engine_config_editor_gui import engine_config_get, engine_run
-from bib.gui.config_editor import create_config
+from bib.GUI.base.engine_config_editor_gui import *
+from bib.GUI.config_editor import *
+from bib.GUI.engine_main import *
 
-def init_engine():
-    create_config()
+def engine():
+    config_auto()
     engine_config_get()
     engine_run()
+    engine2DRun()
+
+
+    

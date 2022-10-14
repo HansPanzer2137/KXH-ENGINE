@@ -5,6 +5,7 @@ import os
 import sys
 import configparser
 from PIL import Image
+import time
 FORMAT = "RGBA"
 
 
@@ -59,6 +60,7 @@ def engine_run():
     clock = pygame.time.Clock()
 
     app_debug.config_engine_run = True
+    start = time.time()
     while app_debug.config_engine_run:
         frame = pil_to_game(get_gif_frame(gif_img, current_frame))
         screen.blit(frame, (0, 0))
@@ -68,8 +70,13 @@ def engine_run():
         pygame.display.update()
         current_frame = (current_frame + 1) % gif_img.n_frames
         clock.tick(10)
-        if current_frame == 200:
+        counter = time.time() - start
+        print(counter)
+        if counter >= 3:
             app_debug.config_engine_run=False
+    
+    return
+
     
 
 

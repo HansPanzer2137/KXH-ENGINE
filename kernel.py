@@ -2,6 +2,8 @@ import os
 import sys
 
 
-import bib.main_pip
+from bib import main_pip
 
-bib.main_pip.init_engine()
+print(sys.modules)
+
+main_pip.engine()
