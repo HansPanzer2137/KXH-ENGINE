@@ -7,9 +7,9 @@ import configparser
 import tkinter as TK
 
 
-from bib.GUI.engine3D.object3d import *
-from bib.GUI.engine3D.camera import *
-from bib.GUI.engine3D.projection import *
+from bib.gui.engine3D.object3d import *
+from bib.gui.engine3D.camera import *
+from bib.gui.engine3D.projection import *
 
 
 
