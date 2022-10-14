@@ -18,8 +18,8 @@ class Camera:
         self.v_fov = self.h_fov * (render.HEIGHT / render.WIDTH)
         self.near_plane = 0.1
         self.far_plane = 100
-        self.moving_speed = 0.02
-        self.rotation_speed = 0.01
+        self.moving_speed = 20
+        self.rotation_speed = 10
         
     def control(self):
         key = pg.key.get_pressed()
