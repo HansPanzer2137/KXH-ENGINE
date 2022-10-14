@@ -1,5 +1,5 @@
 import pygame as pg
-from bib.GUI.engine3D.matrixFunctions import *
+from bib.gui.engine3D.matrixFunctions import *
 
 
 class Object3D:
