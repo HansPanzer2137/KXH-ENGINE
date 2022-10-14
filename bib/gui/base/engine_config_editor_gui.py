@@ -72,7 +72,7 @@ def engine_run():
         clock.tick(10)
         counter = time.time() - start
         print(counter)
-        if counter >= 10:
+        if counter >= 5:
             app_debug.config_engine_run=False
     
     return
