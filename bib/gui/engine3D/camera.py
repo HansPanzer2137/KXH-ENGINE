@@ -13,7 +13,7 @@ class Camera:
         self.near_plane = 0.1
         self.far_plane = 100
         self.moving_speed = 20
-        self.rotation_speed = 10
+        self.rotation_speed = 0.01 #dont change trust me :((
         
     def control(self):
         key = pg.key.get_pressed()
