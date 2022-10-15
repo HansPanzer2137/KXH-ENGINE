@@ -10,13 +10,13 @@ The advantage of the engine is that it can be used on any platform. This means t
 
 This engine is a form of a school-research project on the use of air engineering techniques with ICT knowledge and acquired in the field of programmer during the education process.
 
-
+<br>
 
 All cooperation should be sent by e-mail to the following address: dilerdanych@gmail.com
 Any financial donation to support the project is not yet possible, but if necessary, it will be made available
 
 
-<br>
+<br><br>
 
 ### Functions
 
