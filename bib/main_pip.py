@@ -6,7 +6,7 @@ def engine():
     config_auto()
     engine_config_get()
     engine_run()
-    engine3DRun()
+    OpenGL_engine3DRun()
 
 
     
