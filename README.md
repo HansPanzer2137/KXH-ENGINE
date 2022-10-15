@@ -1,13 +1,14 @@
 # KXH-ENGINE
 
-KXH-ENGINE is experimental, Python writed, shell that provide user to analyse 3D/2D data form real UAV or make a complex simulations.
 
 ![TerryDavisMoment](web-sources/baner.gif)
 
+KXH-ENGINE is experimental, Python writed, shell that provide user to analyse 3D/2D data form real UAV or make a complex simulations.
+<br>
 The engine is to enable not only the analysis of recorded data, but also downloading them directly from the unit in motion and processing them in real time. The current priority is to create an environment capable of controlling the drone itself and the early versions of the computing engine and adapting it to simple physical tasks.
-
+<br>
 The advantage of the engine is that it can be used on any platform. This means that it can be used equally on Windows, MacOS and Linux
-
+<br>
 This engine is a form of a school-research project on the use of air engineering techniques with ICT knowledge and acquired in the field of programmer during the education process.
 
 <br>
