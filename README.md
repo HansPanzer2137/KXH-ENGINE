@@ -13,7 +13,7 @@ This engine is a form of a school-research project on the use of air engineering
 
 <br>
 
-All cooperation should be sent by e-mail to the following address: dilerdanych@gmail.com
+All cooperation should be sent by e-mail to the following address: dilerdanych@gmail.com <br>
 Any financial donation to support the project is not yet possible, but if necessary, it will be made available
 
 
