@@ -19,7 +19,8 @@ def EngineRunConf(engineDim, openGLSup):
             #idk
             print("in build")
         elif openGLSup == "n" or openGLSup=="no":
-            engine2DRun()
+            #engine2DRun()
+            print("in build")
         else:
             return 0
 

@@ -127,7 +127,7 @@ class OpenGL_SoftwareRender3D():
         while True:
             clock.tick(30)
             for e in pg.event.get():
-                if e.type == QUIT():
+                if e.type == pg.QUIT:
                     sys.exit()
                 if e.type == KEYDOWN and e.key == K_ESCAPE:
                     sys.exit()
@@ -148,7 +148,7 @@ class OpenGL_SoftwareRender3D():
                         tx += i
                         ty += j
 
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)  # type: ignore
             glLoadIdentity()
 
 
@@ -167,3 +167,8 @@ def engine3DRun():
 def OpenGL_engine3DRun():
     app = OpenGL_SoftwareRender3D()
     app.run()
+
+def engine2DRun():
+    app = SoftwareRender2D()
+    app.run()
+
