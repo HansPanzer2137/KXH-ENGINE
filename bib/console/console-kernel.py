@@ -2,7 +2,7 @@ import os
 import bib
 
 import math
-from bib.gui.engine_main import *
+from bib.gui.engine_main3D import *
 
 
 def EngineRunConf(engineDim, openGLSup):

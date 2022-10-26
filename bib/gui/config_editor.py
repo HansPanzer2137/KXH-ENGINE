@@ -15,8 +15,11 @@ def config_auto():
             'GUI-width': '917',
             'GUI-drone': 'class-K',
 
-            'ENGINE-HEIGHT': str(root.winfo_screenheight()),
-            'ENGINE-WIDTH': str(root.winfo_screenwidth())
+            'ENGINE3D-HEIGHT': str(root.winfo_screenheight()),
+            'ENGINE3D-WIDTH': str(root.winfo_screenwidth()),
+
+            'ENGINE2D-HEIGHT': str(root.winfo_screenheight()),
+            'ENGINE2D-WIDTH': str(root.winfo_screenwidth())
         }
         with open('config.ini', 'w') as configfile:
             config.write(configfile)
